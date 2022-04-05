@@ -78,7 +78,7 @@ class Character {
 		return result;
 	}
 	set width(value) {
-		this.elem.clientWidth = value + "px";
+		this.elem.style.width = value + "px";
 	}
 	//The height of the character's element
 	get height() {
@@ -88,7 +88,7 @@ class Character {
 		return result;
 	}
 	set height(height) {
-		this.elem.clientHeight = height + "px";
+		this.elem.style.height = height + "px";
 	}
 	//The id of the background element that the character should be rendered to.
 	backgroundId = "background";
