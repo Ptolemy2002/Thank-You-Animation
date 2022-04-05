@@ -37,6 +37,11 @@
                 height: 100px;
             }
 
+            #disco-ball {
+                width: 75px;
+                height: 75px;
+            }
+
             .speech-bubble {
                 position: absolute;
                 width: 100px;
@@ -189,6 +194,7 @@
             <h2 class="character" id="title">Thank You!</h2>
             <img id="breakdancer" class="character" src="images/breakdancer/frame_00.png" alt="breakdancer" />
             <img id="group-dance" class="character" src="images/group_dance/frame_000.gif" alt="group dance" />
+            <img id="disco-ball" class="character" src="images/disco_ball/frame_0.png" alt="disco ball" />
         </div>
 
         <br>
@@ -205,13 +211,7 @@
                 <li>Click on "Stop!" button to pause the animation.</li>
                 <li>Click on "Move One Frame!" button to move the animation one frame and then stop.</li>
                 <li>Click on "Reset!" button to reset the animation to the beginning.</li>
-                <li>
-                    Click on "Make A ball!" button to create a ball at a random x position. 
-                    This will automatically play the animation.  
-                </li>
-                <li>Balls have random speeds between 20 and 40.</li>
-                <li>Balls will disappear after bouncing a certain number of times (random between 2 and 10).</li>
-                <li>Arno will react to getting hit with a ball.</li>
+
                 <li>
                     Checking the "Debug Mode?" box will give you advanced features. 
                     You will get a display of the mouse position, character positions, and canvas dimensions. 
@@ -225,8 +225,7 @@
                 <li>Click on the "Clear Points!" button to remove all debug points.</li>
                 <li>Debug points are all draggable.</li>
                 <li>
-                    Music will play while the animation is running. If it ends, it will loop. 
-
+                    Music will play while the animation is running. If it ends, it will loop.
                 </li>
                 <li>To see the controls for music, check the "Show Music Controls?" box.</li>
                 <li>
@@ -234,10 +233,6 @@
                     Keep in mind that the move button plays the music and the stop button pauses it.
                 </li>
                 <li>The reset button will restart the music for the next play.</li>
-                <li>
-                    Every 30 seconds the animation is running, it automatically loops itself, 
-                    but the music continues as normal to improve flow.
-                </li>
             </ol>
         </div>
     </body>

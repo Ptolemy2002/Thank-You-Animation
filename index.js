@@ -1412,7 +1412,7 @@ function genFrameList(maxFrame, suffix) {
 
 Character.Timer_Audio = document.querySelector("#music");
 Character.Timer_Audio.volume = 0.5;
-Character.Loop_Frames = 350;
+//Character.Loop_Frames = 350;
 
 let title = Character.Create(null, "title", "background", [],
 	false, 0, 300, 0, "left-right", 
@@ -1459,6 +1459,10 @@ let groupDance = Character.Create("images/group_dance", "group-dance", "backgrou
 			this.y = this.backgroundHeight - this.height + 10;
 		}
 	});
+
+let disco_ball = Character.Create("images/disco_ball", "disco-ball", "background",
+	genFrameList(5, "png"), true, 1, 270, 50, "left-right", 
+	"bounce", 15, 0, null, function() {});
 
 
 //Determine if the last action was a reset
