@@ -9,7 +9,6 @@ let title = Character.Create(null, "title", "background", [],
 		//Lock the animation to avoid exceptions because this is not an img element.
 		this.lockAnimation = true;
 		this.flipOnBounce = false;
-		this.edgeLower = this.movementSpeed;
 
 		this.onInit = function() {
 			//Restart the css animation for the element by reapplying the style
@@ -45,6 +44,7 @@ let groupDance = Character.Create("images/group_dance", "group-dance", "backgrou
 	 0, 0, null, function() {
 		this.onFrame = function(frame) {
 			this.y = this.backgroundHeight - this.height + 10;
+			this.x = this.backgroundWidth/2 - this.width/2;
 		}
 	});
 

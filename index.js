@@ -73,7 +73,7 @@ class Character {
 	//The width of the character's element
 	get width() {
 		this.elem.display = "block"
-		let result = this.elem.clientWidth;
+		let result = this.elem.getBoundingClientRect().width;
 		if (!this.shown) this.elem.display = "none";
 		return result;
 	}
@@ -83,7 +83,7 @@ class Character {
 	//The height of the character's element
 	get height() {
 		this.elem.display = "block"
-		let result = this.elem.clientHeight;
+		let result = this.elem.getBoundingClientRect().height;
 		if (!this.shown) this.elem.display = "none";
 		return result;
 	}
@@ -94,14 +94,14 @@ class Character {
 	backgroundId = "background";
 	//The width of the background element.
 	get backgroundWidth() {
-		return this.background.clientWidth;
+		return this.background.getBoundingClientRect().width;
 	}
 	set backgroundWidth(value) {
 		this.background.style.width = value + "px";
 	}
 	//The height of the background element.
 	get backgroundHeight() {
-		return this.background.clientHeight;
+		return this.background.getBoundingClientRect().height;
 	}
 	set backgroundHeight(value) {
 		this.background.style.height = value + "px";
@@ -172,7 +172,7 @@ class Character {
 	_flipped = false;
 	set flipped(value) {
 		this._flipped = value;
-		this.customTransformations.scaleX = value ? -1 : 1;
+		this.customTransformations.scaleX = value ? -Math.abs(this.customTransformations.x) : Math.abs(this.customTransformations.x);
 	}
 	get flipped() {
 		return this._flipped;
