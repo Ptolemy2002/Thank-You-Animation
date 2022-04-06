@@ -1429,6 +1429,7 @@ function moveAll() {
 function moveFrameAll() {
 	Character.All_Character_Instances.forEach(character => {
 		character.restart();
+		character.updateVisuals();
 	});
 	if (Character.Timer_Audio) Character.Timer_Audio.pause();
 	Character.TIMER_INTERVAL();
