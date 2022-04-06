@@ -166,13 +166,13 @@
         <p id="bounds">Bounds go here</p>
 
         <div id="button-container" class="scroll-container">
-            <button id="instructions" onclick="showInstructionPopup();">Instructions!</button>
-            <button id="move" onclick="moveAll()">Move It!</button>
-            <button id="moveFrame" onclick="moveFrameAll()">Move One Frame!</button>
-            <button id="stop" onclick="stopAll()">Stop!</button>
-            <button id="reset" onclick="resetAll()">Reset!</button>
+            <button id="instructions" onclick="showInstructionPopup();">Instructions</button>
+            <button id="move" onclick="moveAll()">Play</button>
+            <button id="stop" onclick="stopAll()">Pause</button>
+            <button id="moveFrame" onclick="moveFrameAll()">Advance One Frame</button>
+            <button id="reset" onclick="resetAll()">Reset</button>
             <!--<button id="make-ball" onclick="makeBall()">Make a Ball!</button>-->
-            <button id="clear" onclick="clearPoints()">Clear Points!</button>
+            <button id="clear" onclick="clearPoints()">Clear Points</button>
         </div>
         <div class="scroll-container">
             <input type="checkbox" id="debug" onchange="toggleDebug()">Debug Mode?</input>
@@ -196,6 +196,8 @@
             <img id="disco-ball" class="character" src="images/disco_ball/frame_0.png" alt="disco ball" />
         </div>
 
+        <p>This animation was created especially for you by Ptolemy Henson.</p>
+
         <br>
         <audio id="music" style="width: 100%;">
             <source src="sounds/music/music.mp3" type="audio/mpeg">
@@ -206,10 +208,10 @@
             <button id="close-popup" onclick="hideInstructionPopup()">Close</button>
             <h2>Instructions</h2>
             <ol>
-                <li>Click on "Move It!" to begin the animation.</li>
-                <li>Click on "Stop!" button to pause the animation.</li>
-                <li>Click on "Move One Frame!" button to move the animation one frame and then stop.</li>
-                <li>Click on "Reset!" button to reset the animation to the beginning.</li>
+                <li>Click on "Play" to begin the animation.</li>
+                <li>Click on "Pause" button to pause the animation.</li>
+                <li>Click on "Advance One Frame" button to move the animation one frame and then stop.</li>
+                <li>Click on "Reset" button to reset the animation to the beginning.</li>
 
                 <li>
                     Checking the "Debug Mode?" box will give you advanced features. 
@@ -221,7 +223,7 @@
                     The position of all debug points is displayed.
                 </li>
                 <li>Click on a debug point to remove it.</li>
-                <li>Click on the "Clear Points!" button to remove all debug points.</li>
+                <li>Click on the "Clear Points" button to remove all debug points.</li>
                 <li>Debug points are all draggable.</li>
                 <li>
                     Music will play while the animation is running. If it ends, it will loop.
@@ -229,7 +231,7 @@
                 <li>To see the controls for music, check the "Show Music Controls?" box.</li>
                 <li>
                     You can manually pause, play, control volume, fast forward, or rewind. 
-                    Keep in mind that the move button plays the music and the stop button pauses it.
+                    Keep in mind that the play button plays the music and the pause button pauses it.
                 </li>
                 <li>The reset button will restart the music for the next play.</li>
             </ol>
